@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Product Form</title>
+</head>
+<body>
+<a data-th-href="@{/catalogue/products/list}">&larr; to Catalogue</a>
+<h1>New Product:</h1>
+<form method="POST" data-th-action="@{/catalogue/products/create}">
+    <label>
+        Product Name:<br>
+        <input type="text" name="title" required>
+    </label><br>
+    <label>
+        Description:<br>
+        <textarea name="details" required></textarea>
+    </label><br>
+    <button type="submit">Create</button>
+</form>
+</body>
+</html>
